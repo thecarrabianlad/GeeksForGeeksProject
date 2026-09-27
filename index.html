@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS 2026 — Bennett University</title>
+<meta name="description" content="NEXUS 2026 at Bennett University, Greater Noida — a day-long tech and culture fest. Reserve your seat.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="polyCanvas" aria-hidden="true"></canvas>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-mark">NEX<span>US</span></a>
+  <ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#register">Register</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#register" class="btn btn-primary">Reserve your seat
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="1" y1="4" x2="17" y2="4"/><line x1="1" y1="9" x2="17" y2="9"/><line x1="1" y1="14" x2="17" y2="14"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#overview">Overview</a>
+  <a href="#highlights">Highlights</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#register">Register</a>
+</div>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero-pin" id="heroPin">
+    <div class="hero-sticky">
+      <div class="hero-stage" id="heroStage">
+      <canvas id="frameCanvas" aria-hidden="true"></canvas>
+      <div class="hero-scrim"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Bennett University presents</p>
+        <h1 class="hero-title">NEXUS</h1>
+        <p class="hero-sub">One campus. Every reality converges for a single day.</p>
+        <p class="hero-tagline">Are you ready?</p>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+            <span>14 November 2026</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+            <span>Bennett University,<br>Greater Noida</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#register" class="btn btn-primary">Reserve your seat
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#overview" class="btn btn-ghost">See what's inside
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l6 3.5-6 3.5V8.5Z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-hud" aria-hidden="true">
+        <span class="hud-plus"></span>
+        <ul class="hud-words">
+          <li>Multiverse</li>
+          <li>Ideas</li>
+          <li>People</li>
+          <li>Possibilities</li>
+        </ul>
+        <span class="hud-dot"></span>
+        <span class="hud-year">NEXUS<br>2026</span>
+        <span class="hud-plus"></span>
+      </div>
+      <span class="hud-corner" aria-hidden="true"></span>
+
+      <div class="hero-progress">
+        <span id="progressLabel">Scroll</span>
+        <div class="hero-progress-track"><div class="hero-progress-fill" id="progressFill"></div></div>
+        <span class="hero-progress-dot"></span>
+      </div>
+      <div class="hero-veil" id="heroVeil" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="site-rest">
+
+  <!-- ================= FACTS ================= -->
+  <section class="facts" id="overview">
+    <div class="bg-orb-wrap" aria-hidden="true" style="--depth:0.8">
+      <span class="bg-orb bg-orb--gold" style="width:280px;height:280px;top:-120px;left:8%;"></span>
+      <span class="bg-orb bg-orb--mist" style="width:220px;height:220px;bottom:-140px;right:12%;"></span>
+    </div>
+    <div class="wrap">
+      <div class="fact reveal">
+        <p class="fact-label">When</p>
+        <p class="fact-value">14 November<br><small>Saturday, gates open 9:00</small></p>
+      </div>
+      <div class="fact reveal">
+        <p class="fact-label">Where</p>
+        <p class="fact-value">Bennett University<br><small>Greater Noida, Uttar Pradesh</small></p>
+      </div>
+      <div class="fact reveal">
+        <p class="fact-label">Format</p>
+        <p class="fact-value">One day, six stages<br><small>Open to all colleges</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HIGHLIGHTS ================= -->
+  <section class="highlights" id="highlights">
+    <div class="bg-orb-wrap" aria-hidden="true" style="--depth:1.3">
+      <span class="bg-orb bg-orb--gold" style="width:420px;height:420px;top:-10%;right:-8%;"></span>
+      <span class="bg-orb bg-orb--crimson" style="width:340px;height:340px;bottom:-15%;left:-6%;"></span>
+    </div>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What's inside</span>
+        <h2>Six arenas, one campus</h2>
+        <p>Every corner of NEXUS is built around a different way to compete, build, and watch. Move between them as you like — your badge gets you into all six.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card--wide reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Keynote Arena</h3>
+          <p>A main-stage lineup of builders, founders, and researchers, closing with a live Q&A open to the floor.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-glow card-glow--alt"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M7 9l3 3-3 3M12 15h5"/></svg>
+          </div>
+          <h3>Build Challenges</h3>
+          <p>Twelve-hour hackathon tracks, judged live at midnight.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-glow card-glow--alt"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Live Showdown</h3>
+          <p>Bracketed gaming and robotics matches, streamed on the main screen.</p>
+        </article>
+
+        <article class="card card--tall reveal">
+          <div class="card-glow card-glow--alt"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>
+          </div>
+          <h3>Night Circuit</h3>
+          <p>The day closes with a full production concert on the main lawn — bands, DJs, and a closing set under the lights.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-glow card-glow--alt"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 5 18.5V20M11 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM19 20v-1.5a3 3 0 0 0-2-2.83M15.5 4.1a3 3 0 0 1 0 5.8"/></svg>
+          </div>
+          <h3>Creator Meetups</h3>
+          <p>Small-group sessions with speakers and past winners, capped at twenty seats each.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SCHEDULE ================= -->
+  <section class="schedule" id="schedule">
+    <div class="bg-orb-wrap" aria-hidden="true" style="--depth:1">
+      <span class="bg-orb bg-orb--mist" style="width:320px;height:320px;top:10%;left:-10%;"></span>
+      <span class="bg-orb bg-orb--gold" style="width:260px;height:260px;bottom:5%;right:-8%;"></span>
+    </div>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Running order</span>
+        <h2>How the day unfolds</h2>
+        <p>One track, easy to follow. Times are approximate and confirmed on your badge the morning of.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-time">9:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Gates open</h4>
+            <p>Badge collection and stage walkthroughs begin at the main atrium.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">10:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Opening ceremony</h4>
+            <p>Welcome address and a first look at this year's challenge briefs.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">11:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Keynote Arena opens</h4>
+            <p>The first main-stage session of the day.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">12:30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Build Challenges begin</h4>
+            <p>Hackathon tracks lock in teams and start the twelve-hour clock.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">15:30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Live Showdown finals</h4>
+            <p>Gaming and robotics brackets reach their final rounds.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">18:30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Night Circuit</h4>
+            <p>The main lawn opens for the closing concert.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">23:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Build Challenges judging</h4>
+            <p>Final submissions and live judging, results announced after midnight.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COUNTDOWN ================= -->
+  <section class="countdown">
+    <div class="bg-orb-wrap" aria-hidden="true" style="--depth:1.6">
+      <span class="bg-orb bg-orb--crimson" style="width:380px;height:380px;top:-20%;left:50%;transform:translateX(-50%);"></span>
+    </div>
+    <div class="countdown-ring" aria-hidden="true"></div>
+    <div class="wrap reveal">
+      <span class="eyebrow">Time remaining</span>
+      <h2>NEXUS begins soon</h2>
+      <div class="countdown-grid" id="countdown">
+        <div class="countdown-unit"><div class="countdown-num" id="cd-days">00</div><div class="countdown-label">Days</div></div>
+        <div class="countdown-unit"><div class="countdown-num" id="cd-hours">00</div><div class="countdown-label">Hours</div></div>
+        <div class="countdown-unit"><div class="countdown-num" id="cd-mins">00</div><div class="countdown-label">Minutes</div></div>
+        <div class="countdown-unit"><div class="countdown-num" id="cd-secs">00</div><div class="countdown-label">Seconds</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REGISTER ================= -->
+  <section class="register" id="register">
+    <div class="bg-orb-wrap" aria-hidden="true" style="--depth:0.9">
+      <span class="bg-orb bg-orb--gold" style="width:300px;height:300px;top:-10%;right:5%;"></span>
+      <span class="bg-orb bg-orb--mist" style="width:260px;height:260px;bottom:-12%;left:0%;"></span>
+    </div>
+    <div class="wrap">
+      <div class="register-copy reveal">
+        <span class="eyebrow">Registration</span>
+        <h2>Get your badge before the gates open</h2>
+        <p>Entry is free for Bennett University students with a valid ID. Guests from other colleges can register below — badges are capped, so early sign-ups get priority seating at the Keynote Arena.</p>
+        <ul class="register-points">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg>
+            One badge covers every stage, all day
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg>
+            Confirmation and entry pass sent by email
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg>
+            Team registration available for Build Challenges
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-card reveal" id="formCard">
+        <div class="field-set">
+          <form id="regForm" novalidate>
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="10-digit number" required>
+            </div>
+            <div class="field">
+              <label for="college">College or organization</label>
+              <input type="text" id="college" name="college" placeholder="Bennett University" required>
+            </div>
+            <div class="field">
+              <label for="track">Which arena first?</label>
+              <select id="track" name="track">
+                <option>Keynote Arena</option>
+                <option>Build Challenges</option>
+                <option>Live Showdown</option>
+                <option>Night Circuit</option>
+                <option>Creator Meetups</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Reserve your seat</button>
+            <p class="form-note">No payment required. You'll receive your entry pass by email.</p>
+          </form>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <h4>You're on the list</h4>
+          <p>A confirmation is on its way to your inbox. See you on 14 November at Bennett University.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="bg-orb-wrap" aria-hidden="true" style="--depth:0.6">
+    <span class="bg-orb bg-orb--mist" style="width:260px;height:260px;top:-40%;left:20%;"></span>
+  </div>
+  <div class="wrap">
+    <div class="footer-top reveal">
+      <a href="#top" class="nav-mark">NEX<span>US</span></a>
+      <ul class="footer-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="10" x2="8" y2="17"/><circle cx="8" cy="7" r="1"/><path d="M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>NEXUS 2026 · Bennett University, Greater Noida</span>
+      <span>Organized by the Student Council</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
